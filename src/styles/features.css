@@ -1,0 +1,28 @@
+.features-container{
+    background-color: #1dbf73;
+}
+.features-mobile-left-side{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.features-mobile-left-side-items{
+    text-align: center;
+}
+.features-mobile-right-side-items{
+    text-align: center;
+}
+.features-mobile{
+    display: flex;
+    flex:0.6
+}
+.features-mobile-right-side{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    justify-content:"space-around";
+}
