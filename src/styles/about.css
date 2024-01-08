@@ -1,0 +1,21 @@
+.about-container{
+    background-color: #fff;
+}
+.about-div{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.about-right-side{
+    display: grid;
+    justify-items: start;
+    align-content: center;
+}
+.about-left-side{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
