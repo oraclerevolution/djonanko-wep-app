@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/about.css"
 import mobilephone from "../settings.png"
-import {FaCheckCircle} from "react-icons/fa"
+import { FaCheckCircle } from "react-icons/fa"
 
 export const About = () => {
-    return(
+    return (
         <div className="about-container">
             <div className="container mx-auto about-div">
                 <h1 className="text-center about-title font-serif mb-3">A propos de Djonanko</h1>
@@ -35,6 +35,18 @@ export const About = () => {
                             <h3 className="mb-4 font-serif">BEST USER EXPERIENCE</h3>
                         </div>
                         <p className="font-serif">ncjdeoanj kneojnarn vnoirari nvieornviz vjciej    oivjzeiojof fzeoz jioe.formats(['i firo ']) cnozjv nvzei noeao ojnvraro   nvroo vnrvne vnrhuçr nvefnio</p>
+                    </div>
+                </div>
+            </div>
+            <div className="rounded-lg w-2/3 mx-auto mt-5 p-5 mb-5 container mx-auto bg-green-100">
+                <div className="flex flex-row">
+                    <div className="mr-5">
+                        <p className="text-5xl">🥳</p>
+                    </div>
+                    <div>
+                        <h2 className="text-2xl font-bold font-serif mb-1">Recevez plein de cadeau en invitant vos proches !</h2>
+                        <p className="text-gray-600 font-serif mb-4">Gagnez 500 FCFA pour chaque ami que vous invitez 😇</p>
+                        <button className="about-create-button">Creez votre compte</button>
                     </div>
                 </div>
             </div>

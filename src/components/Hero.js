@@ -5,6 +5,7 @@ import mobilephone from "../settings.png"
 import logo from "../logo.svg"
 import "../styles/hero.css"
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaArrowDown } from "react-icons/fa"
+import { Parallax, useParallax } from "react-scroll-parallax";
 
 export const Hero = () => {
 
@@ -66,28 +67,38 @@ export const Hero = () => {
 
         {/* hero banner */}
         <div className="hero-banner flex flex-row">
-          <div className="w-1/2 p-5 hero-left-side">
-            <div className='div-transparent flex pt-5 pb-5 w-2/3'>
-              <div className='hero-presenation flex flex-col'>
-                <h1 className='hero-title font-serif mb-3'>Découvrez Djonanko</h1>
-                <p className='hero-subtitle mb-5 text-gray-800 font-serif'>Découvrez votre application mobile qui vous permet d'éffectuer des transferts d'argent inter-opérateur et des paiements marchands avec des frais inégalés. </p>
-                <h3 className='download-title font-bold mb-2 font-serif'>Télécharger maintenant</h3>
-                <div className='flex flex-row align-center justify-start'>
-                  <img src={playstore} className='mr-3' alt="playstore" height="50px" width="150px" />
-                  <img src={appstore} className='mr-3' alt="appstore" height="50px" width="150px" style={{ position: "relative", bottom: "1px" }} />
+          <Parallax speed={-20}>
+            <div className="w-1/2 p-5 hero-left-side">
+              <div className='div-transparent flex pt-5 pb-5 w-2/3'>
+                <div className='hero-presenation flex flex-col'>
+                  <h1 className='hero-title font-serif mb-3'>Découvrez Djonanko</h1>
+                  <p className='hero-subtitle mb-5 text-gray-800 font-serif'>Découvrez votre application mobile qui vous permet d'éffectuer des transferts d'argent inter-opérateur et des paiements marchands avec des frais inégalés. </p>
+                  <h3 className='download-title font-bold mb-2 font-serif'>Télécharger maintenant</h3>
+                  <div className='flex flex-row align-center justify-start'>
+                    <img src={playstore} className='mr-3' alt="playstore" height="50px" width="150px" />
+                    <img src={appstore} className='mr-3' alt="appstore" height="50px" width="150px" style={{ position: "relative", bottom: "1px" }} />
+                  </div>
                 </div>
               </div>
+              
             </div>
-          </div>
-          <div className="w-1/2 p-5 flex justify-center">
-            <img src={mobilephone} alt="logo" height="600px" width="300px" />
-          </div>
+          </Parallax>
+          <Parallax speed={15} className="w-1/2 p-5 flex justify-center">
+            <div className="">
+              <img src={mobilephone} style={{ position: "relative", top: "200px" }} alt="logo" height="600px" width="500px" />
+            </div>
+          </Parallax>
         </div>
-        <div>
-          <svg class="animate-bounce w-6 h-6 ...">
-            <FaArrowDown size={20} color="#1DBF73" />
-          </svg>
-        </div>
+        <Parallax
+          translateX={['-400px', '0px']}
+          scale={[0.75, 1]}
+          rotate={[-180, 0]}
+          easing="easeInQuad"
+          className="shadow-2xl font-bold font-serif p-8 rounded-md"
+          style={{ backgroundColor: "#1dbf73", color: "white", maxWidth: "300px", height: "200px", display:"flex", alignItems:"center", justifyContent:"center" }}
+        >
+          <p>👋🏻 Ici c'est Djonan Djonanko</p>
+        </Parallax>
       </div>
     </div>
   )

@@ -19,3 +19,13 @@
     justify-items: center;
     align-content: center;
 }
+.about-create-button{
+    background-color: #fff;
+    color: #1dbf73;
+    border: 1px solid #1dbf73;
+    color: #000;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    font-weight: bold;
+}
