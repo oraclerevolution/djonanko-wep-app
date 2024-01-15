@@ -3,6 +3,7 @@ import { About } from './components/About';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { Screenshots } from './components/Screenshots';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <About />
         <Features />
+        <Screenshots />
       </>
     </ParallaxProvider>
   );

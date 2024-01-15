@@ -5,7 +5,7 @@ import {FaQrcode, FaWallet, FaStore, FaStar, FaExchangeAlt, FaMobile, FaMobileAl
 
 export const Features = () => {
     return(
-        <section className="features-container py-12 bg-gray-100">
+        <section className="features-container py-12">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-3 font-serif text-white">Fonctionalités de Djonanko</h2>
                 <p className="text-lg text-center text-gray-800 font-serif mb-5">
