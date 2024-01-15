@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Screenshots } from './components/Screenshots';
+import { Pricing } from './components/Pricing';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <About />
         <Features />
         <Screenshots />
+        <Pricing />
       </>
     </ParallaxProvider>
   );

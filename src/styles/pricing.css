@@ -1,0 +1,25 @@
+.pricing-container{
+    background-color: #fff;
+}
+.pricing-special{
+    background-color: #1dbf73;
+}
+.pricing-download-button{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #1dbf73;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    font-weight: bold;
+    align-self: center;
+}
+.pricing-download-button-pop{
+    background-color: #fff;
+    color: #000;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    font-weight: bold;
+    align-self: center;
+}
